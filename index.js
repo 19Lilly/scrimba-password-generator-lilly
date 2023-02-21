@@ -3,10 +3,13 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let password = ""
 let password1El = document.getElementById("password-1")
+console.log(password1El)
 
 
 
-function generatePassword() {
+
+
+function generatePassword(characters) {
     for (let i = 0; i <16; i++){
     return password[i] += characters[Math.floor(Math.random()*characters.length)];
     
@@ -14,6 +17,7 @@ function generatePassword() {
 password1El.text = password;
 }
 
+generatePassword(characters)
 
 
 
