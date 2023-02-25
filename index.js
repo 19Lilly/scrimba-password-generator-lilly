@@ -5,11 +5,6 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","="
 let password1El = document.getElementById("password-1")
 let password2El = document.getElementById("password-2")
 
-function generatePassword (){
-    password1El.textContent = passwordGenerator();
-    password2El.textContent = passwordGenerator();
-}
-
 function passwordGenerator() {
     let password = ""
     let passwordLength = document.getElementById("password-length").value
@@ -40,6 +35,11 @@ function passwordGenerator() {
            
         } return password;
         
+    }
+
+    function generatePassword(){
+        password1El.textContent = passwordGenerator();
+        password2El.textContent = passwordGenerator();
     }
 
 
