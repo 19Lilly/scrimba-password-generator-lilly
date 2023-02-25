@@ -18,6 +18,9 @@ function passwordGenerator() {
     let withoutSymbols = document.getElementById("without-symbols").checked
     let withoutNumbers = document.getElementById("without-numbers").checked
 
+    if (passwordLength === 0 || passwordLength< 5 || passwordLength >20 ) {
+        document.getElementsByTagName("button").disabled=true;
+    }
 
     if (withoutSymbols === true && withoutNumbers === true) {
         for (let i = 0; i < passwordLength; i++){
