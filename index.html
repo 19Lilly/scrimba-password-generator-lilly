@@ -1,12 +1,18 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password generator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="wrapper">
             <h1>Generate a <br><span>random password</span></h1>
             <p>Never use an insecure password again</p>
-            <button onclick="generatePassword(characters)">Generate passwords</button>
+            <button onclick="generatePassword()">Generate passwords</button>
             <div id="line"></div>
             <div class="wrapper-1">
                 <div class="rectangle" id="password-1"></div>
