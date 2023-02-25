@@ -17,32 +17,30 @@
 
             <div id="line"></div>
 
-            <div class="password-input">
-                <label id="password-length" class="text-style" for="password-length">Password length (5-20):</label>
-                <input type="number" id="password-length" class="text-style" name="password-length"
-                min="5" max="20">
+            <div>
+                <label for="password-length">Password length (5-20):</label>
+                <input type="number" id="password-length" name="password-length" min="5" max="20">
             </div>
 
             <div class="wrapper-1">
-                <div class="checkbox">
-                    <label id="without-symbols" class="text-style" for="without-symbols">Without symbols: </label>
-                    <input type ="checkbox" id="without-symbols" name="without-symbols">
-                </div>
-                <div class="checkbox">
-                    <label id="without-numbers" class="text-style" for="without-numbers">Without numbers: </label>
-                    <input type = "checkbox" id="without-numbers" name="without-numbers">
-                </div>
+                
+                <label for="without-symbols">Without symbols:</label>
+                <input type ="checkbox" id="without-symbols" name="without-symbols">
+
+                <label for="without-numbers">Without numbers:</label>
+                <input type = "checkbox" id="without-numbers" name="without-numbers">
+                
             </div>
 
             <button onclick="generatePassword()">Generate passwords</button>
 
             <div id="line"></div>
 
-            <div class="wrapper-2 ">
+            <div class="wrapper-2 text-style">
                 <div class="rectangle" id="password-1"></div>
                 <div class="rectangle" id="password-2"></div>
             </div>
-            
+
         </div>
         <script src="index.js"></script>
     </body>

@@ -39,6 +39,7 @@ p{
     line-height: 28px;
     width: 372px;
     height: 31px;
+    margin-bottom: 0px;
 }
 
 .wrapper{
@@ -48,19 +49,15 @@ p{
     display: flex;
     flex-direction: column;
     margin: 50px auto;
-    padding: 80px 52px;
+    padding: 50px 52px;
 }
-
-header {
-    padding-bottom: 0;
-}
-
 .wrapper-1{
     width:550px;
     display: flex;
     gap: 15px;
     padding: 20px 0px;
 }
+
 
 .wrapper-2{
     width: 550px;
@@ -71,13 +68,11 @@ header {
 
 #password-length {
     background: #1F2937;
-    margin-right: 10px;
+    color:#FFFFFF;
+    text-align: center;
     width: 60px;
     height: 20px;
-}
-
-#without-numbers, #without-symbols{
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 button {
@@ -107,7 +102,7 @@ button {
     width: 446px;
     height: 0px;
     border: 1px solid #2F3E53;
-    margin: 20px 0px;
+    margin: 25px 0px;
 }
 
 .rectangle {

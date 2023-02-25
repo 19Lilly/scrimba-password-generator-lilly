@@ -5,11 +5,22 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","="
 let password1El = document.getElementById("password-1")
 let password2El = document.getElementById("password-2")
 
+function generatePassword(){
+    password1El.textContent = passwordGenerator();
+    password2El.textContent = passwordGenerator();
+    console.log("fungujem");
+    console.log(password1El.textContent = passwordGenerator());
+}
+
 function passwordGenerator() {
     let password = ""
     let passwordLength = document.getElementById("password-length").value
     let withoutSymbols = document.getElementById("without-symbols").checked
     let withoutNumbers = document.getElementById("without-numbers").checked
+
+    if (passwordLength === 0) {
+        document.getElementsByTagName("button").disabled=true;
+    }
 
     if (withoutSymbols === true && withoutNumbers === true) {
         for (let i = 0; i < passwordLength; i++){
@@ -37,10 +48,7 @@ function passwordGenerator() {
         
     }
 
-    function generatePassword(){
-        password1El.textContent = passwordGenerator();
-        password2El.textContent = passwordGenerator();
-    }
+   
 
 
 
