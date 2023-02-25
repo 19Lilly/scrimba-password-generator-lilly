@@ -12,6 +12,15 @@
         <div class="wrapper">
             <h1>Generate a <br><span>random password</span></h1>
             <p>Never use an insecure password again</p>
+            <label id="password-length1" for="password-length">Password length (5-20):</label>
+            <input type="number" id="password-length" name="password-length"
+             min="5" max="20">
+             <div>
+             <label id="without-symbols1" for="without-symbols">Without symbols: </label>
+             <input type ="checkbox" id="without-symbols" name="without-symbols">
+             <label id="without-numbers1" for="without-numbers">Without numbers: </label>
+             <input type = "checkbox" id="without-numbers" name="without-numbers">
+            </div>
             <button onclick="generatePassword()">Generate passwords</button>
             <div id="line"></div>
             <div class="wrapper-1">
