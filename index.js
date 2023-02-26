@@ -8,9 +8,7 @@ let password2El = document.getElementById("password-2")
 function generatePassword(){
     password1El.textContent = passwordGenerator();
     password2El.textContent = passwordGenerator();
-    console.log("fungujem");
-    console.log(password1El.textContent = passwordGenerator());
-}
+ }
 
 function passwordGenerator() {
     let password = ""
