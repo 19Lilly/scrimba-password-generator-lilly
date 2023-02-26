@@ -11,12 +11,6 @@ body {
     min-width: max-content;
 }
 
-.text-style{
-    border-radius: 6px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
 h1{
     color: #FFFFFF;
     font-family: 'Karla', sans-serif;
@@ -109,6 +103,8 @@ button {
     width: 210px;
     height: 39px;
     background: #2F3E53;
+    color: #FFFFFF;
+    text-align: center;
     padding: 10px 0px;
 }
 
