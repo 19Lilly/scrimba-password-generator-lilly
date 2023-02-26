@@ -23,7 +23,7 @@
     --line-border: 1px solid #2F3E53; 
     --toggler-color: #444352;
     --switch-on-color: #fff;
-    --switch-off-color: #ccc;
+    --switch-off-color: #ECFDF5;
   }
 
 * {
@@ -155,9 +155,7 @@ label {
     height: 20px;
   }
 
-  .switch input {
-    display:none;
-  }
+ 
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
