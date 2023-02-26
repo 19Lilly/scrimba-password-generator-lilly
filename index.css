@@ -118,6 +118,15 @@ button {
     flex-grow: 0;
 }
 
+#copy-btn{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 #line {
     width: 446px;
     height: 0px;
@@ -133,6 +142,15 @@ button {
     text-align: center;
     padding: 10px 0px;
     border-radius: 6px;
+}
+
+.fa-copy {
+    position: absolute;
+    padding: 8px;
+    right: 2px;
+    cursor: pointer;
+    color: #5e6f88;
+    transition: color .3s;
 }
 
 label {
