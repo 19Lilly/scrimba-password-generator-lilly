@@ -46,6 +46,11 @@ function passwordGenerator() {
         
     }
 
+    var wrapper = document.getElementsByClassName('wrapper')[0];
+    document.getElementById('toggler').addEventListener('change', (event) => {
+      console.log(toggler)
+      event.target.checked ? wrapper.removeAttribute('data-theme') : wrapper.setAttribute('data-theme', 'dark');
+    });
    
 
 
