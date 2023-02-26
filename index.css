@@ -21,9 +21,9 @@
     --p-color: #D5D4D8;
     --label-color: #FFFFFF;
     --line-border: 1px solid #2F3E53; 
-    --switch-on-color: #444352;
-    --switch-off-color: #ECFDF5;
     --toggler-color: #444352;
+    --switch-on-color: #fff;
+    --switch-off-color: #ccc;
   }
 
 * {
@@ -154,6 +154,10 @@ label {
     width: 48px;
     height: 20px;
   }
+
+  .switch input {
+    display:none;
+  }
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
@@ -186,9 +190,7 @@ label {
   input:checked + .slider {
     background-color: var(--switch-on-color);
   }
-  input:focus + .slider {
-    box-shadow: 0 0 1px var(--switch-on-color);
-  }
+ 
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);

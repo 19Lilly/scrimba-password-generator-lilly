@@ -5,6 +5,12 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","="
 let password1El = document.getElementById("password-1")
 let password2El = document.getElementById("password-2")
 
+let wrapper = document.getElementsByClassName("wrapper")[0];
+document.getElementById("toggler").addEventListener("change", (event) => {
+  console.log(toggler)
+  event.target.checked ? wrapper.removeAttribute("data-theme") : wrapper.setAttribute("data-theme", "dark");
+});
+
 function generatePassword(){
     password1El.textContent = passwordGenerator();
     password2El.textContent = passwordGenerator();
@@ -46,11 +52,7 @@ function passwordGenerator() {
         
     }
 
-    var wrapper = document.getElementsByClassName('wrapper')[0];
-    document.getElementById('toggler').addEventListener('change', (event) => {
-      console.log(toggler)
-      event.target.checked ? wrapper.removeAttribute('data-theme') : wrapper.setAttribute('data-theme', 'dark');
-    });
+  
    
 
 
