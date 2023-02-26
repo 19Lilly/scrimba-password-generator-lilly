@@ -9,6 +9,17 @@ body {
     margin: 0;
     background: black;
     min-width: max-content;
+    padding: 0 50px;
+}
+
+.wrapper{
+    background: #1F2937;
+    width: 550px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 55px 52px;
 }
 
 h1{
@@ -36,15 +47,7 @@ p{
     margin-bottom: 0px;
 }
 
-.wrapper{
-    background: #1F2937;
-    width: 550px;
-    height: 570px;
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-    padding: 50px 52px;
-}
+
 .wrapper-1{
     width:550px;
     display: flex;
