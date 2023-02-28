@@ -35,7 +35,7 @@
 body {
     margin: 0;
     background: url("markus-spiske-FXFz-sW0uwo-unsplash.jpg");
-    
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 50px;
