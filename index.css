@@ -32,19 +32,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100%;
+}
+
 body {
     margin: 0;
     background: url("markus-spiske-FXFz-sW0uwo-unsplash.jpg") no-repeat center center;
     background-size: cover;
     background-color: black;
     padding: 0 50px;
-
-@media (max-width: 400px) { 
-  -webkit-background-size: contain;
-   -moz-background-size: contain;
-   -o-background-size: contain;
-   background-size: contain;
-}
 }
 
 .wrapper{
