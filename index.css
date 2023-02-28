@@ -39,6 +39,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 50px;
+    max-height: 100vh;
 }
 
 .wrapper{
