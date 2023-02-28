@@ -38,7 +38,7 @@ body {
     background-size: cover;
     background-color: black;
     padding: 0 50px;
-    -webkit-background-size: content;
+    -webkit-background-size: 100% auto;
 }
 
 .wrapper{
