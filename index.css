@@ -39,7 +39,7 @@ body {
     background-color: black;
     padding: 0 50px;
 
-    @media only screen (max-width: 400px) { 
+    @media only screen (max-width: 350px) { 
       background-size: auto;
     }
 }
