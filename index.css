@@ -5,6 +5,7 @@
 :root, [data-theme="default"] {
     --body-bg-color: black;
     --wrapper-bg-color: #ECFDF5;
+    --wrapper-border-color: #6b7280;
     --h1-color: #2B283A;
     --p-color: #6B7280;
     --label-color: #6B7280;
@@ -16,6 +17,7 @@
   /* Dark Mode Theme */
   [data-theme="dark"] {
     --body-bg-color: black;
+    --wrapper-border-color: #ffffff;
     --wrapper-bg-color: #1F2937;
     --h1-color: #FFFFFF;
     --p-color: #D5D4D8;
@@ -44,6 +46,9 @@ body {
     flex-direction: column;
     margin: 50px auto;
     padding: 55px 52px;
+    border-radius: 15px;
+    border: 5px solid var(--wrapper-border-color);
+    box-shadow: 5px 5px 20px #FFFFFF;
 }
 
 h1{
@@ -116,6 +121,12 @@ button {
     flex-grow: 0;
 }
 
+button:hover{
+  background: #4ADF86;
+}
+
+
+
 #line {
     width: 446px;
     height: 0px;
@@ -125,7 +136,6 @@ button {
 
 .rectangle{
   display:flex;
- 
  }
 
 #password-1, #password-2{
