@@ -81,8 +81,6 @@ p{
 .wrapper-2{
     width: 550px;
     display: flex;
-    justify-content: flex-start;
-    gap: 25px;
 }
 
 #password-length {
@@ -134,23 +132,19 @@ button {
     margin: 25px 0px;
 }
 
-.rectangle {
-    width: 210px;
+.rectangle{
+  display:flex;
+}
+
+#password-1, #password-2{
+    width: 215px;
     height: 39px;
     background: #273549;
     color: #4ADF86;
     text-align: center;
-    padding: 10px 0px;
+    font-size: 16px;
     border-radius: 6px;
-}
-
-.fa-copy {
-    position: absolute;
-    padding: 8px;
-    right: 2px;
-    cursor: pointer;
-    color: #5e6f88;
-    transition: color .3s;
+    padding-top: 6px;
 }
 
 label {
@@ -172,7 +166,6 @@ label {
     width: 48px;
     height: 20px;
   }
-
  
   /* Hide default HTML checkbox */
   .switch input {
@@ -219,7 +212,25 @@ label {
   .slider.round:before {
     border-radius: 50%;
   }
+
+ .fa-copy{
+    position: relative;
+    left: -35px;
+    padding: 8px;
+    cursor: pointer;
+    color: #5e6f88;
+    transition: color .3s;
+  }
   
+  .fa-copy:hover {
+    color: white;
+  }
+
+  .fa-copy:active {
+  color: #4ADF86;
+  }
+
+
 
 
 

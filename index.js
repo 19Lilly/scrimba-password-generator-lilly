@@ -12,12 +12,7 @@ document.getElementById("toggler").addEventListener("change", (event) => {
 });
 
 function copyPassword(event) {
-    navigator.clipboard.writeText(event.target.innerText)
-    
-    document.getElementById("passwordCopiedAlert").classList.toggle("hide")
-    setTimeout(() => {
-        document.getElementById("passwordCopiedAlert").classList.toggle("hide")
-    }, 1500)
+    navigator.clipboard.writeText(event.target.textContent)
 }
 
 function generatePassword(){
@@ -31,7 +26,7 @@ function passwordGenerator() {
     let withoutSymbols = document.getElementById("without-symbols").checked
     let withoutNumbers = document.getElementById("without-numbers").checked
 
-    if (passwordLength === 0 || passwordLength<5 || passwordLength>20 ) {
+    if (passwordLength === 0 || passwordLength<3 || passwordLength>15 ) {
         document.getElementsById("generate-password").disabled=true;
     }
 
