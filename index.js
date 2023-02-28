@@ -52,13 +52,13 @@ function passwordGenerator() {
         
     }
 
-    function copyPassword1() {
-        navigator.clipboard.writeText(password1El.textContent);
-    }
+function copyPassword1() {
+    navigator.clipboard.writeText(password1El.textContent);
+}
 
-    function copyPassword2() {
-        navigator.clipboard.writeText(password2El.textContent);
-    }
+function copyPassword2() {
+    navigator.clipboard.writeText(password2El.textContent);
+}
     
     
 
