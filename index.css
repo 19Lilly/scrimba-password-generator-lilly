@@ -116,15 +116,6 @@ button {
     flex-grow: 0;
 }
 
-#copy-btn{
-    width: 35px;
-    height: 35px;
-    display: flex;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
 #line {
     width: 446px;
     height: 0px;
@@ -134,17 +125,18 @@ button {
 
 .rectangle{
   display:flex;
-}
+ 
+ }
 
 #password-1, #password-2{
-    width: 215px;
-    height: 39px;
     background: #273549;
     color: #4ADF86;
     text-align: center;
     font-size: 16px;
-    border-radius: 6px;
-    padding-top: 6px;
+    border-radius: 6px; 
+    width: 215px;
+    height: 39px;
+    padding-top: 6px;      
 }
 
 label {
@@ -215,8 +207,8 @@ label {
 
  .fa-copy{
     position: relative;
-    left: -35px;
-    padding: 8px;
+    left: -25px;
+    top: 10px;
     cursor: pointer;
     color: #5e6f88;
     transition: color .3s;
