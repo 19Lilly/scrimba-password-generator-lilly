@@ -11,10 +11,6 @@ document.getElementById("toggler").addEventListener("change", (event) => {
   event.target.checked ? wrapper.removeAttribute("data-theme") : wrapper.setAttribute("data-theme", "dark");
 });
 
-function copyPassword(event) {
-    navigator.clipboard.writeText(event.target.textContent)
-}
-
 function generatePassword(){
     password1El.textContent = passwordGenerator();
     password2El.textContent = passwordGenerator();
@@ -55,6 +51,16 @@ function passwordGenerator() {
         } return password;
         
     }
+
+    function copyPassword1() {
+        navigator.clipboard.writeText(password1El.textContent);
+    }
+
+    function copyPassword2() {
+        navigator.clipboard.writeText(password2El.textContent);
+    }
+    
+    
 
   
    
