@@ -38,10 +38,6 @@ body {
     background-size: cover;
     background-color: black;
     padding: 0 50px;
-
-    @media only screen (max-width: 350px) { 
-      background-size: auto;
-    }
 }
 
 .wrapper{
