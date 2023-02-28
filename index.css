@@ -129,9 +129,7 @@ button:hover{
   background: #4ADF86;
 }
 
-
-
-#line {
+.line {
     width: 446px;
     height: 0px;
     border: var(--line-border);
